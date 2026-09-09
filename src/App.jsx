@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Header from "./components/Header";
 import TaskCard from "./components/TaskCard";
 import './App.css'
+import TaskForm from './components/taskform';
 
 const tarefas = [
   {id:1, titulo: "Estudar React",categoria: "SENAI",prioridade: "alta"},
@@ -28,7 +29,7 @@ function App() {
           />
         ))}
         <section className="grid gap-4 sm:grid-cols-2">
-          
+          <TaskForm />
         </section>
       </main>
     </div>
